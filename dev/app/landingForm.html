@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>SMMarians - Helpdesk</title>
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../css/style.min.css" rel="stylesheet"/>
+</head>
+<body>
+    <div id="mainPage">
+        <section class="container">
+            <section class="header">
+                <div class="formpage-topsection">
+                    <div class="page-logo col-md-6">
+                        <img src="../../images/logo.jpg" alt="SMMarians" class="small-image" />
+                    </div>
+                    <div class="side-top-menu col-md-6 floatRight">
+                        <div class="">
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="top-divider"></div>
+            <section class="main-container">
+                <section class="left-menu-section col-md-2">
+                    <div class="left-menu-content" id="accordionMenu">
+                        <ul class="menu-bar">
+                            <li>
+                                <h3><span class="icon-master"></span>Master</h3>
+                                <ul>
+                                    <li><a href="#">Branch Master</a></li>
+                                    <li><a href="#">City Master</a></li>
+                                    <li><a href="#">Product Type Master</a></li>
+                                    <li><a href="#">Product Master</a></li>
+                                    <li><a href="#">Role Master</a></li>
+                                    <li><a href="#">User Master</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3><span class="icon-transaction"></span>Transaction</h3>
+                                <ul>
+                                    <li><a href="#">Customer Call</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>
+                                    <span class="icon-transaction"></span>Report
+                                </h3>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="main-form col-md-10">
+                    <form>
+                        <div class="left-side-form col-md-6">
+                            <div class="form-panel">
+                                <h4 class="medium">Customer Information</h4>
+                                <hr/>
+                                <div class="customer-info bottomSpace">
+                                    <label>Customer Name</label>
+                                    <div class="ui-input-text ui-body-c">
+                                        <input name="txt_name" id="txt_name" autocomplete="off" value="" placeholder="Customer Name *" type="text" class="ui-input-text ui-body-c">
+                                    </div>
+                                    <label>Email ID</label>
+                                    <div class="ui-input-text ui-body-c">
+                                        <input name="txt_emailId" id="txt_emailId" autocomplete="off" value="" placeholder="Email Id *" type="email" class="ui-input-text ui-body-c">
+                                    </div>
+                                    <label>Phone Number</label>
+                                    <div class="ui-input-text ui-body-c">
+                                        <input name="txt_phoneNo" id="txt_phoneNo" autocomplete="off" value="" placeholder="Phone Number *" type="text" class="ui-input-text ui-body-c">
+                                    </div>
+                                    <label>Customer ID</label>
+                                    <div class="ui-input-text ui-body-c">
+                                        <input name="txt_id" id="txt_id" autocomplete="off" value="" placeholder="Customer ID *" type="text" class="ui-input-text ui-body-c">
+                                    </div>
+                                </div>
+                                <h4 class="medium">Ticket Information</h4>
+                                <hr/>
+                                <div class="ticket-info bottomSpace">
+                                    <label>Category</label>
+                                    <div class="ui-select">
+                                        <div class="ui-btn ui-shadow ui-btn-corner-all ui-btn-icon-right ui-btn-up-c">
+                                            <span class="ui-btn-inner">
+                                                <span class="ui-btn-text"><span>Select *</span></span>
+                                                <span class="ui-icon ui-icon-arrow-d ui-icon-shadow">&nbsp;</span>
+                                            </span>
+                                            <select id="ticketCategory" name="ticketCategory" required="required">
+                                                <option value="">Select *</option>
+                                                <option value="value">Value</option>
+                                                <option value="Planning">Planning</option>
+                                                <option value="Other">Other</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <label>Type</label>
+                                    <div class="ui-select">
+                                        <div class="ui-btn ui-shadow ui-btn-corner-all ui-btn-icon-right ui-btn-up-c">
+                                            <span class="ui-btn-inner">
+                                                <span class="ui-btn-text"><span>Select *</span></span>
+                                                <span class="ui-icon ui-icon-arrow-d ui-icon-shadow">&nbsp;</span>
+                                            </span>
+                                            <select id="ticketCategory" name="ticketCategory" required="required">
+                                                <option value="">Select *</option>
+                                                <option value="value">Value</option>
+                                                <option value="Planning">Planning</option>
+                                                <option value="Other">Other</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <label>Status</label>
+                                    <div class="ui-select">
+                                        <div class="ui-btn ui-shadow ui-btn-corner-all ui-btn-icon-right ui-btn-up-c">
+                                            <span class="ui-btn-inner">
+                                                <span class="ui-btn-text"><span>Select *</span></span>
+                                                <span class="ui-icon ui-icon-arrow-d ui-icon-shadow">&nbsp;</span>
+                                            </span>
+                                            <select id="ticketCategory" name="ticketCategory" required="required">
+                                                <option value="">Select *</option>
+                                                <option value="value">Value</option>
+                                                <option value="Planning">Planning</option>
+                                                <option value="Other">Other</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right-side-form col-md-6">
+                            <div class="form-panel">
+                                <h4 class="medium">Ticket Description</h4>
+                                <hr/>
+                                <div class="ticket-desc">
+                                    <textarea id="ticket-note" class="" maxlength="250"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-btnCtrls verticalSpace">
+                                <div class="btnSpace">
+                                    <button class="btnCtrl">Resolve</button>
+                                </div>
+                                <div class="btnSpace">
+                                    <button class="btnCtrl">Reassign</button>
+                                </div>
+                                <div class="btnSpace">
+                                    <button class="btnCtrl">Save</button>
+                                </div>
+                                <div class="btnSpace">
+                                    <button class="btnCtrl">Cancel</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </section>
+            </section>
+        </section>
+    </div>
+    <script type="text/javascript" src="../vendor/jquery/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../js/script.min.js"></script>
+</body>
+</html>
