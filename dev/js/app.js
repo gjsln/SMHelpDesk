@@ -5,11 +5,3 @@ angular.module('SMApp', ['ngAnimate', 'ngSanitize', 'ui.bootstrap'])
 	$scope.isMasterCollapsed = true;
 	$scope.isReportCollapsed = true;
 }]);
-
-var jQ = jQuery.noConflict();
-
-var SMApp = SMApp || {};
-
-(function(SMApp){
-
-})(SMApp);

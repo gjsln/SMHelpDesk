@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="SMApp">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,11 +28,11 @@
             <div class="top-divider"></div>
             <section class="main-container">
                 <section class="left-menu-section col-md-2">
-                    <div class="left-menu-content" id="accordionMenu">
+                    <div class="left-menu-content" id="accordionMenu" ng-controller="CollapseMenuCtrl">
                         <ul class="menu-bar">
                             <li>
-                                <h3><span class="icon-master"></span>Master</h3>
-                                <ul>
+                                <h3 ng-click="isMasterCollapsed = !isMasterCollapsed"><span class="icon-master"></span>Master</h3>
+                                <ul uib-collapse="isMasterCollapsed">
                                     <li><a href="#">Branch Master</a></li>
                                     <li><a href="#">City Master</a></li>
                                     <li><a href="#">Product Type Master</a></li>
@@ -42,13 +42,13 @@
                                 </ul>
                             </li>
                             <li>
-                                <h3><span class="icon-transaction"></span>Transaction</h3>
-                                <ul>
+                                <h3 ng-click="isTransCollapsed = !isTransCollapsed"><span class="icon-transaction"></span>Transaction</h3>
+                                <ul uib-collapse="isTransCollapsed">
                                     <li><a href="#">Customer Call</a></li>
                                 </ul>
                             </li>
                             <li>
-                                <h3>
+                                <h3 ng-click="isReportCollapsed = !isReportCollapsed">
                                     <span class="icon-transaction"></span>Report
                                 </h3>
                             </li>
@@ -80,7 +80,13 @@
         </section>
     </div>
     <script type="text/javascript" src="../vendor/jquery/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="../vendor/angular/angular-1.5.8.min.js"></script>
+    <script type="text/javascript" src="../vendor/angular/angular-animate-1.5.8.min.js"></script>
+    <script type="text/javascript" src="../vendor/angular/angular-resource-1.5.8.min.js"></script>
+    <script type="text/javascript" src="../vendor/angular/angular-sanitize-1.5.8.min.js"></script>
+    <script type="text/javascript" src="../vendor/angular/angular-touch-1.5.8.min.js"></script>
     <script type="text/javascript" src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../vendor/angular/ui-bootstrap-2.2.0.min.js"></script>
     <script src="../../js/script.min.js"></script>
 </body>
 </html>
