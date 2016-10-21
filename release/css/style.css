@@ -103,6 +103,9 @@ html body input {
   font-size: inherit;
   line-height: inherit;
 }
+.clearfix {
+  clear: both;
+}
 .medium,
 strong {
   font-family: "franklin-gothic-urw-n5", "franklin-gothic-urw", sans-serif;
@@ -530,4 +533,37 @@ textarea {
   border-radius: 3px 3px 3px 3px;
   border: 1px solid #e8e8e8;
 }
+#mainPage .container .footer-section {
+  width: 100%;
+  display: block;
+}
+#mainPage .container .footer-section .footer-content {
+  background-color: #04074A;
+  height: 30px;
+  width: 100%;
+}
+#mainPage .container .footer-section .footer-content ul.footer-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+#mainPage .container .footer-section .footer-content ul.footer-menu li {
+  float: left;
+}
+#mainPage .container .footer-section .footer-content ul.footer-menu li a {
+  display: block;
+  text-align: center;
+  color: #fff;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+#mainPage .container .footer-section .footer-content ul.footer-menu li a:hover {
+  text-decoration: underline;
+}
+#mainPage .container .footer-section .footer-content .copyrights .footer-txt {
+  color: #fff;
+  padding-top: 8px;
+}
+/*# sourceMappingURL=style.min.css.map */
 /*# sourceMappingURL=style.min.css.map */
