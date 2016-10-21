@@ -189,6 +189,12 @@ input.ui-input-text {
 .floatRight {
   float: right;
 }
+.floatLeft {
+  float: left;
+}
+.paddingLR {
+  padding: 0 10px;
+}
 ul.menu-bar,
 ul.menu-bar li ul {
   list-style-type: none;
@@ -392,6 +398,50 @@ textarea {
   background-color: #fff;
   padding: 0;
 }
+#mainPage .container .header .side-top-menu {
+  font-size: 12px;
+  padding: 0;
+  padding-top: 10px;
+}
+#mainPage .container .header .side-top-menu a {
+  color: #333;
+}
+#mainPage .container .header .side-top-menu a:hover {
+  text-decoration: none;
+}
+#mainPage .container .header .side-top-menu .user-profile {
+  height: 50px;
+}
+#mainPage .container .header .side-top-menu .user-profile .user-icon {
+  background: url('../images/user-icon.png');
+  background-repeat: no-repeat;
+  padding-left: 45px;
+  padding-bottom: 40px;
+  background-position: 0px 5px;
+}
+#mainPage .container .header .side-top-menu .user-profile .userid-txt {
+  top: 15px;
+  position: relative;
+}
+#mainPage .container .header .side-top-menu .help-btn .help-icon {
+  background: url('../images/help-btn.png');
+  background-repeat: no-repeat;
+  height: 40px;
+  width: 40px;
+}
+#mainPage .container .header .side-top-menu .help-btn .help-txt {
+  padding-left: 7px;
+  padding-top: 5px;
+}
+#mainPage .container .header .side-top-menu .logout-btn .logout-icon {
+  background: url('../images/logout-btn.png');
+  background-repeat: no-repeat;
+  height: 40px;
+  width: 40px;
+}
+#mainPage .container .header .side-top-menu .logout-btn .logout-txt {
+  padding-top: 5px;
+}
 #mainPage .container .login-section {
   background-color: #C0E6FE;
   padding: 10px;
@@ -458,6 +508,18 @@ textarea {
   margin: 0 auto;
   display: table;
 }
+#mainPage .container .icon-plus .icon {
+  background: url(../images/more-plus.png);
+  background-repeat: no-repeat;
+  padding-left: 15px;
+  background-position: 0 2px;
+}
+#mainPage .container .icon-minus .icon {
+  background: url(../images/more-minus.png);
+  background-repeat: no-repeat;
+  padding-left: 15px;
+  background-position: 0 2px;
+}
 #mainPage .container .formpage-topsection {
   background-color: #C0E6FE;
   height: 100px;
@@ -486,7 +548,11 @@ textarea {
 }
 #mainPage .container ul.menu-bar li ul li {
   padding: 10px 0;
-  font-size: 12px;
+  font-size: 14px;
+  padding-left: 10px;
+}
+#mainPage .container ul.menu-bar li ul li:hover {
+  background-color: #04074A;
 }
 #mainPage .container ul.menu-bar h3 {
   margin: 0;
@@ -495,9 +561,14 @@ textarea {
   padding-left: 5px;
   font-size: 14px;
   font-weight: 600;
+  cursor: pointer;
 }
 #mainPage .container ul.menu-bar li a {
   padding-left: 10px;
+}
+#mainPage .container ul.menu-bar li a:hover {
+  color: #fff;
+  text-decoration: none;
 }
 #mainPage .container .main-form .left-side-form,
 #mainPage .container .main-form .right-side-form {

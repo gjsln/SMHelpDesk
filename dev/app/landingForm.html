@@ -14,53 +14,66 @@
     <div id="mainPage">
         <section class="container">
             <section class="header">
-                <div class="formpage-topsection">
-                    <div class="page-logo col-md-6">
-                        <img src="../../images/logo.jpg" alt="SMMarians" class="small-image" />
+                <div class="formpage-topsection col-xs-12">
+                    <div class="col-lg-6">
+                        <div class="page-logo">
+                            <img src="../../images/logo.jpg" alt="SMMarians" class="small-image" />
+                        </div>
                     </div>
-                    <div class="side-top-menu col-md-6 floatRight">
-                        <div class="">
-                            
+                    <div class="side-top-menu col-lg-6">
+                        <div class="floatRight">
+                            <div class="user-profile paddingLR floatLeft">
+                                <a href="#"><span class="user-icon">&nbsp;</span><span class="userid-txt">Login User Name</span></a>
+                            </div>
+                            <div class="help-btn paddingLR floatLeft">
+                                <a href="#">
+                                    <div class="help-icon">&nbsp;</div>
+                                    <div class="help-txt">Help</div>
+                                </a>
+                            </div>
+                            <div class="logout-btn paddingLR floatLeft">
+                                <a href="#">
+                                    <div class="logout-icon">&nbsp;</div>
+                                    <div class="logout-txt">Logout</div>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <div class="top-divider"></div>
+            <div class="top-divider clearfix col-xs-12"></div>
             <section class="main-container">
                 <section class="left-menu-section col-md-2">
                     <div class="left-menu-content" id="accordionMenu" ng-controller="CollapseMenuCtrl">
                         <ul class="menu-bar">
-                            <li>
-                                <h3 ng-click="isMasterCollapsed = !isMasterCollapsed"><span class="icon-master"></span>Master</h3>
+                            <li ng-init="isMasterCollapsed = true">
+                                <h3 ng-click="isMasterCollapsed = !isMasterCollapsed" ng-class="isMasterCollapsed ? 'icon-plus':'icon-minus'"><span class="icon"></span>Master</h3>
                                 <ul uib-collapse="isMasterCollapsed">
-                                    <li><a href="#">Branch Master</a></li>
-                                    <li><a href="#">City Master</a></li>
-                                    <li><a href="#">Product Type Master</a></li>
-                                    <li><a href="#">Product Master</a></li>
-                                    <li><a href="#">Role Master</a></li>
-                                    <li><a href="#">User Master</a></li>
+                                    <li><a ui-sref="branchMaster">Branch Master</a></li>
+                                    <li><a ui-sref="cityMaster">City Master</a></li>
+                                    <li><a href="">Product Type Master</a></li>
+                                    <li><a href="">Product Master</a></li>
+                                    <li><a href="">Role Master</a></li>
+                                    <li><a href="">User Master</a></li>
                                 </ul>
                             </li>
-                            <li>
-                                <h3 ng-click="isTransCollapsed = !isTransCollapsed"><span class="icon-transaction"></span>Transaction</h3>
+                            <li ng-init="isTransCollapsed = true">
+                                <h3 ng-click="isTransCollapsed = !isTransCollapsed" ng-class="isTransCollapsed ? 'icon-plus':'icon-minus'"><span class="icon"></span>Transaction</h3>
                                 <ul uib-collapse="isTransCollapsed">
                                     <li><a href="#">Customer Call</a></li>
                                 </ul>
                             </li>
                             <li>
-                                <h3 ng-click="isReportCollapsed = !isReportCollapsed">
-                                    <span class="icon-transaction"></span>Report
+                                <h3 ng-click="isReportCollapsed = !isReportCollapsed" ng-class="isTransCollapsed ? 'icon-plus':'icon-minus'"><span class=""></span>Report
                                 </h3>
                             </li>
                         </ul>
                     </div>
                 </section>
                 <section class="main-form col-md-10">
-                    <form>
-                        <div class="left-side-form col-md-6">
-                            
-                        </div>
-                    </form>
+                    <div class="left-side-form col-md-6">
+                        <ui-view></ui-view>
+                    </div>
                 </section>
             </section>
             <section class="footer-section clearfix">
@@ -81,12 +94,13 @@
     </div>
     <script type="text/javascript" src="../vendor/jquery/jquery-1.11.2.min.js"></script>
     <script type="text/javascript" src="../vendor/angular/angular-1.5.8.min.js"></script>
+    <script type="text/javascript" src="../vendor/angular/angular-ui-router.min.js"></script>    
     <script type="text/javascript" src="../vendor/angular/angular-animate-1.5.8.min.js"></script>
     <script type="text/javascript" src="../vendor/angular/angular-resource-1.5.8.min.js"></script>
     <script type="text/javascript" src="../vendor/angular/angular-sanitize-1.5.8.min.js"></script>
     <script type="text/javascript" src="../vendor/angular/angular-touch-1.5.8.min.js"></script>
     <script type="text/javascript" src="../vendor/bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../vendor/angular/ui-bootstrap-2.2.0.min.js"></script>
-    <script src="../../js/script.min.js"></script>
+    <script src="../../js/script.js"></script>
 </body>
 </html>
