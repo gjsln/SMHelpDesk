@@ -1,5 +1,5 @@
 {
-  "name": "axa",
+  "name": "smapp",
   "version": "0.4.5",
   "devDependencies": {
     "assemble": "^0.4.42",
@@ -18,11 +18,11 @@
     "grunt-newer": "^1.1.2",
     "grunt-ng-annotate": "^2.0.2",
     "jshint": "^2.6.3",
-    "lodash": "^3.10.1",
+    "lodash": "^4.17.11",
     "typescript": "^1.7.3"
   },
   "dependencies": {
     "angular-ui-router": "^0.3.1",
-    "lodash": "^3.10.1"
+    "lodash": "^4.17.11"
   }
 }
